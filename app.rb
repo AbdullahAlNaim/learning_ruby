@@ -38,3 +38,6 @@ x = gets
 
 puts "you have inputted" + x.to_s
 
+#this shows what version of ruby you have
+puts RUBY_VERSION
+
