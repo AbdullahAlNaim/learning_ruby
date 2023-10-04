@@ -1,43 +1,17 @@
-print "Hello world" + "\n"
+sample_hash = {'a' => 1, 'b' => 2, 'c' => 3}
+puts sample_hash['b']
 
-print "hello".length.to_s + "\n"
+cards = {'monster' => 'Dark Magician', 'spell' => 'fissure', 'trap' => 'trap hole'}
+puts cards['spell']
+puts cards
 
-x = 10
-y = x - 30
-
-print x.to_s + "\n"
-print y.to_s + "\n"
-
-if y < 5
-    print "small number" + "\n"
-elsif y > 5
-    print "Big number" + "\n"
+cards.each do |key, value|
+    puts "Card type: #{key} Card name: #{value}"
 end
 
-def first
-    print "this is a function" + "\n"
+
+dota2 = {:hero => 'drow ranger', :item => 'divine rapear', :creature => 'roshan'}
+
+dota2.each do |key, value|
+    puts "game object type: #{key} and object name: #{value}"
 end
-
-first()
-
-def second(one, two)
-    print (one + two).to_s + "\n"
-end
-
-second(1, 2)
-
-dur = 10
-
-#this is a while loop
-while dur < 20 do
-    puts "the number is: " + dur.to_s 
-    dur += 1
-end
-
-x = gets
-
-puts "you have inputted" + x.to_s
-
-#this shows what version of ruby you have
-puts RUBY_VERSION
-
